@@ -76,38 +76,62 @@ class EntryPanel(wx.Panel):
 
         # Hold Down Conditions
         self.hold_down_conditions = self.add_multiple_selection_entry(
-            button_input_panel, 'Hold Down\nConditions', majorDimension=1, choices=[
-                ('Charge Type', {
-                    'Automatic': 0x0,
-                    'Manual': 0x1,
-                    'Unknown (0x2)': 0x2,
-                    'Unknown (0x3)': 0x3,
-                }, False),
-                ('Options #2', {
-                    'Unknown (0x0)': 0x0,
-                    'Unknown (0x1)': 0x1,
-                    'Unknown (0x2)': 0x2,
-                    'Unknown (0x3)': 0x3,
-                }, False),
-                ('Options #3', {
-                    'Unknown (0x0)': 0x0,
-                    'Unknown (0x1)': 0x1,
-                    'Unknown (0x2)': 0x2,
-                    'Unknown (0x3)': 0x3,
-                }, False),
-                ('Options #4', {
-                    'Unknown (0x0)': 0x0,
-                    'Unknown (0x1)': 0x1,
-                    'Unknown (0x2)': 0x2,
-                    'Unknown (0x3)': 0x3,
-                }, False),
-                ('Action', {
-                    'Continue until released': 0x0,
-                    'Delay until released': 0x1,
-                    'Unknown (0x2)': 0x2,
-                    'Stop skill from activating': 0x4
-                }, False)
-        ])
+            button_input_panel,
+            "Hold Down\nConditions",
+            majorDimension=1,
+            choices=[
+                (
+                    "Charge Type",
+                    [
+                        "Automatic",
+                        "Manual",
+                        "Unknown (0x2)",
+                        "Unknown (0x3)",
+                    ],
+                    True,
+                ),
+                (
+                    "Options #2",
+                    [
+                        "Unknown (0x0)",
+                        "Unknown (0x1)",
+                        "Unknown (0x2)",
+                        "Unknown (0x3)",
+                    ],
+                    True,
+                ),
+                (
+                    "Options #3",
+                    [
+                        "Unknown (0x0)",
+                        "Unknown (0x1)",
+                        "Unknown (0x2)",
+                        "Unknown (0x3)",
+                    ],
+                    True,
+                ),
+                (
+                    "Options #4",
+                    [
+                        "Unknown (0x0)",
+                        "Unknown (0x1)",
+                        "Unknown (0x2)",
+                        "Unknown (0x3)",
+                    ],
+                    True,
+                ),
+                (
+                    "Action",
+                    [
+                        "Continue until released",
+                        "Delay until released",
+                        "Unknown (0x2)",
+                        "Stop skill from activating",
+                    ],
+                    True,
+                ),
+            ],
+        )
 
         self.opponent_size_conditions = self.add_multiple_selection_entry(
             activator_panel, 'Misc\nConditions', cols=4, orient=wx.VERTICAL, choices=[
