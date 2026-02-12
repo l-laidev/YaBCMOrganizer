@@ -194,14 +194,24 @@ class EntryPanel(wx.Panel):
         self.health_required = self.add_float_entry(misc_panel, 'Health Required')
         self.trans_stage = self.add_num_entry(misc_panel, 'Transformation\nStage')
         self.cus_aura = self.add_num_entry(misc_panel, 'CUS_AURA')
-        self.u_68  = self.add_multiple_selection_entry(unknown_panel, 'Unknown Flags',  majorDimension=2,  choices=[
+        self.u_68  = self.add_multiple_selection_entry(unknown_panel, 'Unknown Flags',  majorDimension=4,  choices=[
             ('', {
                 'None': 0x0,
                 'Use Skill Upgrades': 0x1,
                 'Unknown (0x2)': 0x2,
+                'Unknown (0x3)': 0x3,
                 'Unknown (0x4)': 0x4,
+                'Unknown (0x5)': 0x5,
                 'Opponent Reached Ground?': 0x6,
+                'Unknown (0x7)': 0x7,
                 'Unknown (0x8)': 0x8,
+                'Unknown (0x9)': 0x9,
+                'Unknown (0xa)': 0xa,
+                'Unknown (0xb)': 0xb,
+                'Unknown (0xc)': 0xc,
+                'Unknown (0xd)': 0xd,
+                'Unknown (0xe)': 0xe,
+                'Unknown (0xf)': 0xf,
             }, False)
         ])
 
