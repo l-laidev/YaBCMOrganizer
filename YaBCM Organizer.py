@@ -19,7 +19,7 @@ from pyxenoverse.gui.file_drop_target import FileDropTarget
 import yabcm.darkmode as darkmode
 from yabcm.my_helpers import convert_to_px
 
-VERSION = '0.2.9c'
+VERSION = '0.2.9d'
 
 
 class MainWindow(wx.Frame):
